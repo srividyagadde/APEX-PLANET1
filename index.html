@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intermediate Web Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Welcome to My Webpage</h1>
-    <p>This is a simple paragraph to get started with HTML.</p>
 
-    <img src="https://via.placeholder.com/150" alt="Sample Image">
-    <br>
-    <a href="https://www.example.com" target="_blank">Visit Example</a>
+  <header class="navbar">
+    <h1>My Web Project</h1>
+  </header>
 
-    <ul>
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
-    </ul>
+  <main class="main-grid">
+    <!-- Contact Form -->
+    <section class="contact">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
 
-    <button onclick="showMessage()">Click Me</button>
+    <!-- To-Do List -->
+    <section class="todo">
+      <h2>To-Do List</h2>
+      <input type="text" id="todoInput" placeholder="Enter a task" />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="todoList"></ul>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
